@@ -1,0 +1,87 @@
+.header-toolbar {
+  background-color: #123456; /* apna color */
+  color: #fff;
+  padding: 0 10px;
+}
+
+.toolbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.nav-links button {
+  font-size: 0.9rem;
+}
+
+/* Mobile (default) */
+@media (max-width: 600px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .nav-links button {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet/Desktop */
+@media (min-width: 601px) {
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-links button {
+    margin-left: 10px;
+  }
+}
+
+
+/* Form */
+mat-card.form-card {
+  margin: 10px;
+  padding: 10px;
+}
+
+mat-form-field {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+}
+
+/* Table columns on small screen */
+@media (max-width: 600px) {
+  th, td {
+    font-size: 0.8rem;
+    padding: 4px 8px;
+  }
+}

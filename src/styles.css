@@ -1,1 +1,115 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+  background: #f5f7fb;
+}
+
+
+/* Base */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+}
+
+.page {
+  padding: 12px;
+}
+
+.page .title {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* Card styling */
+mat-card {
+  margin: 12px 0;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Form fields full width mobile */
+.mat-form-field {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+/* Buttons full width mobile */
+button.mat-raised-button {
+  width: 100%;
+  margin-top: 12px;
+}
+
+/* Loader overlay */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.header-toolbar {
+  background-color: #26d384; /* apna desired color */
+  color: #042f42; /* text color */
+}
+
+/* Table mobile scrolling */
+.mat-table {
+  display: block;
+  overflow-x: auto;
+}
+
+.mat-table th, .mat-table td {
+  padding: 8px;
+  min-width: 80px;
+  text-align: left;
+  word-break: break-word;
+}
+
+/* No history card alignment */
+mat-card mat-card-content {
+  text-align: center;
+}
+
+
+/* Loader overlay already added in loader component */
+@media (min-width: 600px) {
+  .mat-form-field {
+    width: 48%;
+    margin-right: 4%;
+  }
+
+  .mat-form-field:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  button.mat-raised-button {
+    width: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+
+  mat-card {
+    max-width: 800px;
+    margin: 20px auto;
+  }
+}

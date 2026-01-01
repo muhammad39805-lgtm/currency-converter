@@ -1,0 +1,38 @@
+<!-- Loader -->
+<div *ngIf="loader.loading()" class="loader-overlay">
+  <mat-spinner></mat-spinner>
+</div>
+
+<mat-card class="form-card">
+  <mat-card-title>Convert Currency</mat-card-title>
+  <mat-card-content>
+    <mat-form-field appearance="outline">
+      <mat-label>From</mat-label>
+      <mat-select [(ngModel)]="from">
+        <mat-option *ngFor="let c of currencies" [value]="c">{{ c }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>To</mat-label>
+      <mat-select [(ngModel)]="to">
+        <mat-option *ngFor="let c of currencies" [value]="c">{{ c }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Amount</mat-label>
+      <input matInput type="number" [(ngModel)]="amount" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Date (optional)</mat-label>
+      <input matInput [matDatepicker]="picker" [(ngModel)]="date">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="convert()">Convert</button>
+  </mat-card-content>
+</mat-card>
+
