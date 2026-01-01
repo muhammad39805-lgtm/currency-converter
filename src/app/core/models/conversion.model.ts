@@ -6,4 +6,5 @@ export interface Conversion {
   convertedAmount: number;
   date: Date;
   createdAt?: string;
+
 }
