@@ -1,4 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "dist/currency-frontend/browser"
+
 [[redirects]]
   from = "/*"
-  to = "/browser/index.html"
+  to = "/index.html"
   status = 200
