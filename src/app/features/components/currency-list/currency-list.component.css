@@ -1,0 +1,33 @@
+.currency-card {
+  margin: 20px;
+  padding: 10px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+mat-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.badge {
+  background: #e3f2fd;
+  color: #1565c0;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}

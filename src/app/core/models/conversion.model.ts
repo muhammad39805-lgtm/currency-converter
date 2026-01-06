@@ -9,3 +9,11 @@ export interface Conversion {
 
 
 }
+
+
+ export interface Currency {
+  code: string;
+  name: string;
+  symbol: string;
+  type: string;
+}
