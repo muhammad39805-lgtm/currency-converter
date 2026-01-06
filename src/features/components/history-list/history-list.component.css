@@ -1,0 +1,14 @@
+/* Responsive styles for history-list */
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+  .history-list {
+    flex-direction: row;
+    gap: 16px;
+  }
+}

@@ -1,0 +1,15 @@
+/* Responsive styles for currency-form */
+.currency-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+  .currency-form {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+}

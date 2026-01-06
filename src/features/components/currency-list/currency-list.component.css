@@ -1,0 +1,15 @@
+/* Responsive styles for currency-list */
+.currency-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+  .currency-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
